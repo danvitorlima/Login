@@ -6,7 +6,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(-45deg,#050b1e,#0a1a3a,#0d1b4c,#00e5ff);
+    background: linear-gradient(-40deg,#a7b1cea6,#0a1a3a,#0d1b4c,#1b636b);
     background-size: 400% 400%;
     animation: gradientFlow 15s ease infinite;
     min-height: 100vh;
@@ -86,9 +86,9 @@ body {
 
 .particle {
     position: absolute;
-    width: 4px;
-    height: 4px;
-    background: radial-gradient(circle, rgba(255,255,255,0.8), transparent);
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.30), transparent);
     border-radius: 50%;
     animation: particleFloat 15s linear infinite;
 }
@@ -114,7 +114,7 @@ body {
 }
 
 .login-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: zrgba(0, 0, 0, 0.842);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -122,13 +122,13 @@ body {
     padding: 40px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
     transition: all 0.3s ease;
 }
 
 .login-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 35px 70px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 35px 70px rgba(0, 0, 0, 0.8);
 }
 
 .card-glow {
@@ -137,7 +137,7 @@ body {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #00e5ff, #3f8cff, #00ffcc, #00e5ff);
+    background: linear-gradient(45deg, #5755e4, #3666ad, #3b258b, #308d97);
     background-size: 400% 400%;
     animation: gradientFlow 8s ease infinite;
     border-radius: 24px;
@@ -187,7 +187,7 @@ body {
 .gradient-icon svg {
     width: 32px;
     height: 32px;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
     z-index: 1;
 }
 
@@ -196,15 +196,15 @@ body {
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 8px;
-    background: linear-gradient(135deg, #ffffff, rgba(255,255,255,0.7));
+    background: linear-gradient(135deg, #000000, rgba(0, 0, 0, 0.7));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .login-header p {
-    color: rgba(255,255,255,0.7);
-    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -227,14 +227,14 @@ body {
     bottom: 0;
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.589);
     border-radius: 16px;
     transition: all 0.3s ease;
 }
 
 .input-container:focus-within .input-bg {
-    background: rgba(255,255,255,0.15);
-    border-color: rgba(255,255,255,0.4);
+    background: rgba(255, 255, 255, 0.774);
+    border-color: rgb(255, 0, 0);
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
@@ -243,7 +243,7 @@ body {
     background: transparent;
     border: none;
     padding: 20px 24px;
-    color: rgba(255,255,255,0.95);
+    color: rgba(0, 0, 0, 0.95);
     font-size: 16px;
     font-weight: 500;
     outline: none;
@@ -258,16 +258,16 @@ body {
 .input-container input:-webkit-autofill,
 .input-container input:-webkit-autofill:hover,
 .input-container input:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0 30px rgba(255,255,255,0.1) inset;
-    -webkit-text-fill-color: rgba(255,255,255,0.95);
+    -webkit-box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.1) inset;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.95);
 }
 
 .input-container label {
     position: absolute;
     left: 24px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgba(255,255,255,0.6);
+    top: 5%;
+    transform: translateY(50%);
+    color: rgba(0, 0, 0, 1);
     font-size: 16px;
     font-weight: 400;
     pointer-events: none;
@@ -277,9 +277,9 @@ body {
 
 .input-container input:focus + label,
 .input-container input:not(:placeholder-shown) + label {
-    top: 12px;
+    top: 0px;
     font-size: 12px;
-    color: rgba(255,255,255,0.8);
+    color: rgba(0, 0, 0, 0.8);
     transform: translateY(0);
 }
 
@@ -349,7 +349,7 @@ body {
     z-index: 1;
     width: 20px;
     height: 20px;
-    color: rgba(255,255,255,0.7);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .toggle-icon svg {
